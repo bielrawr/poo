@@ -12,7 +12,7 @@ public class EmprestimoTest {
         Date dataRetirada = new Date();
         Date dataDevolucao = new Date();
         Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", true);
-        Usuario usuario = new Usuario("Gabriel", 21);
+        Usuario usuario = new Usuario("Gabriel", 25);
         Emprestimo emprestimo = new Emprestimo(dataRetirada.toString(), dataDevolucao.toString(), livro, usuario);
 
         assertEquals(dataRetirada.toString(), emprestimo.getDataRetirada());
@@ -23,7 +23,7 @@ public class EmprestimoTest {
         Date dataRetirada = new Date();
         Date dataDevolucao = new Date();
         Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", true);
-        Usuario usuario = new Usuario("Gabriel", 21);
+        Usuario usuario = new Usuario("Gabriel", 25);
         Emprestimo emprestimo = new Emprestimo(dataRetirada.toString(), dataDevolucao.toString(), livro, usuario);
 
         assertEquals(dataDevolucao.toString(), emprestimo.getDataDevolucao());
@@ -34,7 +34,7 @@ public class EmprestimoTest {
         Date dataRetirada = new Date();
         Date dataDevolucao = new Date();
         Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", true);
-        Usuario usuario = new Usuario("Gabriel", 21);
+        Usuario usuario = new Usuario("Gabriel", 25);
         Emprestimo emprestimo = new Emprestimo(dataRetirada.toString(), dataDevolucao.toString(), livro, usuario);
 
         assertEquals("Java Basics", emprestimo.getLivro().getTitulo());
@@ -45,7 +45,7 @@ public class EmprestimoTest {
         Date dataRetirada = new Date();
         Date dataDevolucao = new Date();
         Livro livro = new Livro("Java Basics", new Autor("Alan Turing", "Inglês"), "Tecnologia", true);
-        Usuario usuario = new Usuario("Gabriel", 21);
+        Usuario usuario = new Usuario("Gabriel", 25);
         Emprestimo emprestimo = new Emprestimo(dataRetirada.toString(), dataDevolucao.toString(), livro, usuario);
 
         assertEquals("Gabriel", emprestimo.getUsuario().getNome());

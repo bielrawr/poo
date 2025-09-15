@@ -7,13 +7,13 @@ public class UsuarioTest {
 
     @Test
     public void testGetNome() {
-        Usuario usuario = new Usuario("Gabriel", 21);
+        Usuario usuario = new Usuario("Gabriel", 25);
         assertEquals("Gabriel", usuario.getNome());
     }
 
     @Test
     public void testGetIdade() {
-        Usuario usuario = new Usuario("Gabriel", 21);
-        assertEquals(21, usuario.getIdade());
+        Usuario usuario = new Usuario("Gabriel", 25);
+        assertEquals(25, usuario.getIdade());
     }
 }
